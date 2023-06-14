@@ -10,7 +10,6 @@ export const Contacts = () => {
 
   const filterNames = () =>
     contacts.filter(el => el.name.toLowerCase().includes(filter.toLowerCase()));
-  console.log(contacts);
   return (
     <ul>
       {filterNames().map(el => {
